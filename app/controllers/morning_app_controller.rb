@@ -35,7 +35,7 @@ class MorningAppController < ApplicationController
 			redirect_to('/')
 		else
 			flash[:success] = "<b>Please Enter Valid Phone Number</b>"
-			redirect_to ("/")
+			redirect_to root
 		end
 	end
 end

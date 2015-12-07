@@ -32,10 +32,11 @@ class MorningAppController < ApplicationController
 				#{params['L']}
 				#{params['NQR']}
 				#{params['S']}")
+			flash[:success] = "<b>Text Message was sent to #{params["number"]}</b>"
 			redirect_to('/')
 		else
 			flash[:success] = "<b>Please Enter Valid Phone Number</b>"
-			redirect_to root
+			redirect_to ("/")
 		end
 	end
 end

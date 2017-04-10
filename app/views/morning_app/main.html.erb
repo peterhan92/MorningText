@@ -9,7 +9,9 @@
 
 	<body>
 	<video autoplay loop id="video-background" muted>
-  	<source src="http://beta.mattgrossdesign.com/sites/default/files/wood%20autumn-HD.mp4" type="video/mp4">
+  	<!-- <source src="http://beta.mattgrossdesign.com/sites/default/files/wood%20autumn-HD.mp4" type="video/mp4"> -->
+  	<source src="http://mazwai.com/system/posts/videos/000/000/109/webm/leif_eliasson--glaciartopp.webm?1410742112" type="video/mp4">
+  	<!-- <source src="https://09-lvl3-pdl.vimeocdn.com/01/4267/4/121339800/342885073.mp4?expires=1468603320&token=0d0b416915dbcdc2a6a7a " type="video/mp4"> -->
 	</video>
 
 		<div class="top">
@@ -33,16 +35,16 @@
 					<strong>
 						Thanks to Dictionary.com we can now make you smarter day by day. We'll send you the word of the day and it's definition much like below. Now it's up to you to use it. Click below to add it to your daily dose.<br><br>
 					</strong>
-					<input type="checkbox" name="wotd" value="<%= @wotd_text %>"> <i class="fa fa-graduation-cap"></i>	<%= @wotd.word %> - <%=@wotd.definition %><br>
+					<input type="checkbox" name="wotd" value="<%= @wotd_text %>"> <i class="fa fa-graduation-cap"></i>	<%= @wotd.word %> - <%= @wotd.definition %><br>
 				</div>
 				
 				<div id="qotd" class="col-xs-3">
 				<i class="fa fa-book fa-3x">Today's Quote</i><br><br>
 					<strong>
-						Need that daily motivation to inspire you and help conquer the day. Well we've got you covered. We've taken the relentless Brainyquote searching and provide you with today's pick just like below. Click below to add it to your daily dose.<br>
+						Need that daily motivation to inspire you and help conquer the day. Well we've got you covered. We've taken the relentless Brainyquote searching and provide you with today's pick just like below. Click below to add it to your daily dose.<br><br>
 					</strong>
 					<input type="checkbox" name="quote" value="<%= @quote_text %>"> <i class="fa fa-book"></i>
-					"<%= @quote.content %>" -<%= @quote.person%><br>
+					"<%= @quote.content %>" - <%= @quote.person%><br>
 				</div>
 
 			  <div id="weather" class="col-xs-3">

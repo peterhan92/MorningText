@@ -19,19 +19,10 @@ class MorningAppController < ApplicationController
 		if valid 
 			Phonenumber.create(:number => params["number"])
 			Textmessage.new(params["number"], 
-				" #{params['wotd']}
-				#{params['quote']}
-				#{params['weather']}
-				#{params['123']}
-				#{params['456']}
-				#{params['7']}
-				#{params['ACE']}
-				#{params['BDFM']}
-				#{params['G']}
-				#{params['JZ']}
-				#{params['L']}
-				#{params['NQR']}
-				#{params['S']}")
+"#{params['wotd']}
+#{params['quote']} 
+#{params['weather']} 
+#{params['123']} #{params['456']} #{params['7']} #{params['ACE']} #{params['BDFM']} #{params['G']} #{params['JZ']} #{params['L']} #{params['NQR']} #{params['S']}")
 			flash[:success] = "<b>Text Message was sent to #{params["number"]}</b>"
 			redirect_to('/')
 		else

@@ -1,13 +1,13 @@
 class Quote
 	def initialize
-		@qotd =  Nokogiri::HTML(open('http://www.brainyquote.com/quotes_of_the_day.html'))
+		@qotd =  Nokogiri::HTML(open('https://www.brainyquote.com/quotes_of_the_day.html'))
 	end
 
 	def person	
-		@qotd.css('div.boxyPaddingBig div.bq-aut a')[0].text
+		@qotd.css('div.boxy div.bqcpx a.bq-aut')[0].text
 	end
 
 	def content
-		@qotd.css('div.boxyPaddingBig a')[0].text
+		@qotd.css('div.boxy div.bqcpx a.b-qt')[0].text
 	end
 end

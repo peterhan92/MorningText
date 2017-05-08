@@ -74,4 +74,6 @@ input[type='text'] {
 
 .pure-button.pure-button-primary {
   background: #0078e7;
+  border: none;
+  padding: 7px 15px;
 }

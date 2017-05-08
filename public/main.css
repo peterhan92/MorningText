@@ -71,3 +71,7 @@ form  {
 input[type='text'] {
   color: black!important;
 }
+
+.pure-button.pure-button-primary {
+  background: #0078e7;
+}

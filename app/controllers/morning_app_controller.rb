@@ -17,7 +17,7 @@ class MorningAppController < ApplicationController
 		valid = Validate.new(@phone_number.to_s).phone_number?
 
 		if valid 
-			Phonenumber.create(:number => params["number"])
+			# Phonenumber.create(:number => params["number"])
 			Textmessage.new(params["number"], 
 "#{params['wotd']}
 #{params['quote']} 
